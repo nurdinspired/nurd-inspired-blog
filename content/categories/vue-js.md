@@ -1,5 +1,6 @@
 ---
-name: vueJS
-image: /uploads/category-vuejs.jpeg
+name: vue.js
+image: /uploads/category/category-vuejs.jpeg
 ---
+
 vue.js

@@ -61,4 +61,7 @@ export default {
 .navbar-menu a {
   display: block;
 }
+.nuxt-link-active {
+  color: $secondary;
+}
 </style>

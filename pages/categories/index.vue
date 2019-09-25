@@ -1,6 +1,9 @@
 <template>
   <div id="categories-page" class="page-wrapper categories-page">
-    <site-hero title="Categories" image="/uploads/category-banner.jpg" />
+    <site-hero
+      title="Categories"
+      image="/uploads/category/category-banner.jpg"
+    />
     <main-section theme="one-column">
       <categories-grid />
     </main-section>

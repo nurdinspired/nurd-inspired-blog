@@ -29,6 +29,12 @@ export const getFormattedDate = (date) => {
     'December'
   ]
   const dateObj = new Date(date)
-  return `${months[dateObj.getMonth()]} ${dateObj.getDate() +
-    1}, ${dateObj.getFullYear()}`
+  const y = dateObj.getFullYear()
+  const mo = months[dateObj.getMonth()]
+  const d = dateObj.getDate()
+  const h =
+    dateObj.getHours() > 12 ? dateObj.getHours() - 12 : dateObj.getHours()
+  const m = dateObj.getMinutes() === 0 ? '00' : dateObj.getMinutes()
+  const sign = dateObj.getHours() > 11 ? 'PM' : 'AM'
+  return `${mo} ${d}, ${y} ${h}:${m}${sign}`
 }

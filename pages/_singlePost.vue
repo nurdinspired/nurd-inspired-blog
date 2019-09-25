@@ -16,6 +16,7 @@
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
+            <hr />
             <h6 class="subtitle is-size-4">
               Related Posts
             </h6>

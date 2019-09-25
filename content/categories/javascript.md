@@ -1,5 +1,6 @@
 ---
 name: JavaScript
-image: /uploads/category-javascript.jpg
+image: /uploads/category/category-javascript.jpg
 ---
+
 JavaScript

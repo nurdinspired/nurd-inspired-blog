@@ -52,7 +52,7 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'nurd-inspired' // 'blog-danielkelly-io'
+    siteShortName: process.env.DISQUS_NAME
   },
 
   // Newsletter Subscribe
@@ -64,8 +64,7 @@ export default {
     // or any other url you want to post the form data to
     mailchimp: {
       on: true,
-      formAction:
-        'https://gmail.us20.list-manage.com/subscribe/post?u=8908a8a63f7b375be27cc0d07&amp;id=34c444e976'
+      formAction: process.env.MAIL_CHIMP_URL
     },
     custom: {
       on: false,

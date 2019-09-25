@@ -4,8 +4,8 @@ subtitle: ZSH Theme Setup on macOS
 category:
   - macOS
 author: Josh Campos
-date: 2019-09-31
-featureImage: /uploads/macos-developer-terminal-banner.png
+date: 2018-09-25T02:30
+featureImage: /uploads/post/2018-9-25-developer-terminal-setup/macos-developer-terminal-banner.png
 ---
 
 ## iTERM2

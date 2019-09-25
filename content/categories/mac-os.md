@@ -1,5 +1,6 @@
 ---
 name: macOS
-image: /uploads/category-macos.jpg
+image: /uploads/category/category-macos.jpg
 ---
+
 My favorite OS
