@@ -42,8 +42,8 @@ export default {
    ** ENV variables
    */
   env: {
-    GOOGLE_ANALYTICS_ID: process.env.LAMBDA_FUNCTIONS_BASE_URL,
-    MAIL_CHIMP_URL: process.env.CONTACT_FORM_TO,
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+    MAIL_CHIMP_URL: process.env.MAIL_CHIMP_URL,
     DISQUS_NAME:process.env.DISQUS_NAME
   }
 }
