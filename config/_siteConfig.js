@@ -9,10 +9,10 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  siteName: 'Nurd Inspired',
+  tagline: 'Dev ',
+  featureImage: '/uploads/feature.jpeg',
+  logo: '/uploads/logo.jpg',
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
@@ -23,21 +23,12 @@ export default {
       link: '/about'
     },
     {
-      name: 'Contact',
-      link: '/contact'
-    },
-    {
       name: 'Categories',
       link: '/categories'
     },
     {
       name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'http://awake-premium-lp.danielkelly.io/',
+      link: 'https://github.com/nurdinspired',
       target: '_blank'
     }
   ],
@@ -61,7 +52,7 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
+    siteShortName: 'nurd-inspired' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
@@ -74,7 +65,7 @@ export default {
     mailchimp: {
       on: true,
       formAction:
-        'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
+        'https://gmail.us20.list-manage.com/subscribe/post?u=8908a8a63f7b375be27cc0d07&amp;id=34c444e976'
     },
     custom: {
       on: false,

@@ -6,29 +6,15 @@
   >
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
-        <img
-          v-else
-          :src="$siteConfig.logo"
-          :alt="$siteConfig.siteName"
-          class="logo"
-        />
+        <site-logo />
       </nuxt-link>
-      <hamburger-button @click="active = !active" />
     </div>
-
-    <div
-      :class="{
-        'navbar-menu': true,
-        'is-active': active
-      }"
-    >
+    <div class="navbar-menu">
       <ul class="navbar-end">
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item"
-          @click="active = false"
+          :class="{ 'navbar-item': true }"
         >
           <component
             :is="item.link.startsWith('http') ? 'a' : 'nuxt-link'"
@@ -48,10 +34,10 @@
 </template>
 <script>
 import SiteSearch from '~/components/SiteSearch'
-import HamburgerButton from '~/components/HamburgerButton'
+
 export default {
   name: 'SiteNav',
-  components: { SiteSearch, HamburgerButton },
+  components: { SiteSearch },
   data() {
     return {
       active: false
@@ -72,7 +58,6 @@ export default {
 .navbar-burger {
   height: auto;
 }
-
 .navbar-menu a {
   display: block;
 }

@@ -1,10 +1,10 @@
 ---
-title: Developer Terminal Setup
-subtitle: ZSH Theme Setup on macOS
+title: npm without SUDO on macOS
+subtitle: Save yourself from NPM Sudo headache
 category:
   - macOS
 author: Josh Campos
-date: 2019-09-31
+date: 2018-12-15
 featureImage: /uploads/macos-developer-terminal-banner.png
 ---
 
