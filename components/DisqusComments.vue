@@ -19,7 +19,6 @@
       :shortname="$siteConfig.disqus.siteShortName"
       :identifier="identifier"
     />
-
     <!-- Warning to Provide Disqus Site Short Name -->
     <div
       v-if="$siteConfig.disqus.on && !$siteConfig.disqus.siteShortName"
