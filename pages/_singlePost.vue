@@ -16,7 +16,7 @@
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
-            <hr />
+            <hr class="horizontal-line" />
             <h6 class="subtitle is-size-4">
               Related Posts
             </h6>
@@ -68,5 +68,8 @@ export default {
 <style scoped lang="scss">
 .edit-post {
   margin-bottom: 20px;
+}
+.horizontal-line {
+  border: 1px solid #cccccc;
 }
 </style>

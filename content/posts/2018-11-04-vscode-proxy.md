@@ -1,12 +1,15 @@
 ---
 title: VS Code behind a proxy
-subtitle: Another set of configs....
+subtitle: Config Setting Changes
 category:
   - VS Code
 author: Josh Campos
 date: 2018-11-04T13:28
 featureImage: /uploads/post/2018-11-04-vscode-proxy/vscode-proxy-banner.jpg
 ---
+
+# Config Settings
+
 The following error, in my case, was VS Code failing to download .NET Core library dependecies from behind my proxy:
 
 ![vscode-proxy-error](/uploads/post/2018-11-04-vscode-proxy/vscode-proxy-error.png)
