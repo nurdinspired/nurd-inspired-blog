@@ -61,7 +61,7 @@ We will pull down the SQL container image from the Docker Hub with the following
 
 ![Docker Sql Image Terminal](/uploads/post/2018-09-30-mssql-on-macos/docker_mac_sqlImage_pull.png)
 
-Now we need to run the container to setup the SQL instance.
+Now we need to run the container to setup the SQL instance. Remeber the back slashes below indicate a new line or else you can just type this all on one line without the backslashes.
 
 ```
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
@@ -77,6 +77,7 @@ Run the command above to initialize the following:
 | -p        | Docker host port number (first) and Docker exposed port number (second)                                                    |
 | --name    | Specify the name of the Docker container. This must be a unique name for each container Docker is running.                 |
 | -d        | Executing the SQL 2017 image                                                                                               |
+
 
 The Docker image will be downloaded if it isn't already, then it's installed, and initialized with the flags in the command.
 
@@ -102,20 +103,22 @@ Now we can connect to the SQL Instance:
 
 `/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewStrong!Passw0rd>'`
 
-![Docker Container Connect](/uploads/post/2018-09-30-mssql-on-macos/docker_mac_connect_container.png)
-
 You can leave out the `-P` flag and you will be prompted for the password. Once connected to the SQL instance, you will now have the `1>` prompt.
 
-A simple script in the SQLCMD prompt can be tested with the following:
+![Docker Container Connect](/uploads/post/2018-09-30-mssql-on-macos/docker_mac_connect_container.png)
+
+
+A simple script in the SQLCMD prompt can be tested with the prompt below.
+From within the SQLCMD prompt, you can feed any T-SQL statement followed with the `GO` statement to run the command.
 
 ```
 SELECT Name FROM Sys.Databases;
-Go;
+Go
 ```
 
 In the screenshot above you can see the list of databases that exist in our DB instance.
 
-From within the SQLCMD prompt, you can feed any T-SQL statement followed with the `GO` statement to run the command.
+
 
 ## Summary
 
