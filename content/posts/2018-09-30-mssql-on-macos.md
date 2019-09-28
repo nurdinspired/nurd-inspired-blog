@@ -5,7 +5,7 @@ category:
   - macOS
   - MSSQL Server
 author: Josh Campos
-date: 2018-09-30T14:00
+date: '2018-09-30T14:00'
 featureImage: /uploads/post/2018-09-30-mssql-on-macos/mssql-on-macos-banner.png
 ---
 
@@ -57,7 +57,7 @@ With Docker running, let's open a terminal window to execute the next series of 
 
 We will pull down the SQL container image from the Docker Hub with the following command:
 
-`docker pull microsoft/mssql-server-linux:2017-latest`
+`docker pull mcr.microsoft.com/mssql/server:2017-latest`
 
 ![Docker Sql Image Terminal](/uploads/post/2018-09-30-mssql-on-macos/docker_mac_sqlImage_pull.png)
 
