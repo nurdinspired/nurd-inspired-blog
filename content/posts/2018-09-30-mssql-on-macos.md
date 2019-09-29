@@ -61,7 +61,7 @@ We will pull down the SQL container image from the Docker Hub with the following
 
 ![Docker Sql Image Terminal](/uploads/post/2018-09-30-mssql-on-macos/docker_mac_sqlImage_pull.png)
 
-Now we need to run the container to setup the SQL instance. Remeber the back slashes below indicate a new line or else you can just type this all on one line without the backslashes.
+Now we need to run the container to setup the SQL instance. Remember the back slashes below indicate a new line or else you can just type this all on one line without the backslashes.
 
 ```
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
